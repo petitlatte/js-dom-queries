@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rainbow</title>
+</head>
+
+<body>
+	<h1 id="heading">Rainbow</h1>
+	<ul>
+	<div id="rd" class="color">Red</div>
+	<div id="ora"class="color">Orange</div>
+	<div id="yel"class="color">Yellow</div>
+	<div id= "gre"class="color">Green</div>
+	<div id= "blu" class="color">Blue</div>
+	<div id="pur"class="color">Purple</div>
+	<div id="ind"class="color">Indigo</div>
+	</ul>
+
+<script>
+
+//COLOUR CHANGES
+
+(function(){
+
+	function colorChange(){
+	    var x = document.querySelectorAll(".color");
+	    x[0].style.backgroundColor = "red";
+	    x[1].style.backgroundColor = "orange";
+	    x[2].style.backgroundColor = "yellow";
+	    x[3].style.backgroundColor = "green";
+	    x[4].style.backgroundColor = "blue";
+	    x[5].style.backgroundColor = "purple";
+	    x[6].style.backgroundColor = "indigo";
+
+	}
+	colorChange();
+
+	//FONT CHANGE
+
+	function fontChange(){
+	var txt = document.getElementById("heading");
+
+		txt.style.font = "bold 100px arial,serif";
+
+	}
+
+	fontChange();
+
+	//TEXT SIZE
+
+	function textSize(){
+		var size = document.getElementsByClassName("color");
+			size[0].style.fontSize="100px";
+			size[2].style.fontSize="100px";
+			size[4].style.fontSize="100px";
+			size[6].style.fontSize="100px";
+	}
+
+	textSize();
+
+
+})();
+
+//IFFE ENDS****
+
+
+
+
+</script>
+</body>
+</html>
+
